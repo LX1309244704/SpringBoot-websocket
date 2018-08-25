@@ -1,0 +1,46 @@
+server:
+    port: 7071
+
+# 默认的profile为dev，其他环境通过指定启动参数使用不同的profile，比如：  
+#   测试环境：java -jar pyps-common-websocket-service.jar --spring.profiles.active=test  
+#   生产环境：java -jar pyps-common-websocket-service.jar --spring.profiles.active=prod  
+spring:  
+  application:
+    name: websocket-service
+  profiles: 
+    active: dev
+  devtools:
+    restart:
+      enabled: true     #这里是为了热部署的，与mybatis是无关的
+      
+  dubbo: 
+    application:
+      name: websocket-service
+    base-package: com.websocket
+    registry:
+      address: 127.0.0.1                   # zookeeper注册中心的地址
+      port: 2181                           # zookeeper注册中心的端口
+    protocol:
+      name: dubbo
+      serialization: hessian2
+    provider:
+      retries: 0                           # 服务调用重试次数，服务发布者不给重试，让服务调用者自己重试
+    consumer:
+      retries: 3
+      
+# RabbitMQ Stomp
+rabbit: 
+  relay: 
+    host: 127.0.0.1
+    port: 61613
+  client: 
+    login: guest
+    passcode: guest
+  system: 
+    login: guest
+    passcode: guest
+    
+logging:
+  file: websocket-service.log
+  level:
+    com.websocket: debug 

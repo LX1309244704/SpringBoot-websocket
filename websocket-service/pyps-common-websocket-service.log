@@ -1,0 +1,38 @@
+2018-04-16 15:25:17.110  INFO 14272 --- [restartedMain] c.w.PypsCommonWebSocketApplication       : Starting PypsCommonWebSocketApplication on DESKTOP-L2HH64U with PID 14272 (D:\STSworks\websocket\websocket\websocket-service\target\classes started by Administrator in D:\STSworks\websocket\websocket\websocket-service)
+2018-04-16 15:25:17.111  INFO 14272 --- [restartedMain] c.w.PypsCommonWebSocketApplication       : The following profiles are active: dev
+2018-04-16 15:25:17.369  INFO 14272 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f45632: startup date [Mon Apr 16 15:25:17 CST 2018]; root of context hierarchy
+2018-04-16 15:25:18.343  INFO 14272 --- [restartedMain] c.a.dubbo.common.logger.LoggerFactory    : using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-04-16 15:25:19.219  INFO 14272 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 7071 (http)
+2018-04-16 15:25:19.230  INFO 14272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-16 15:25:19.231  INFO 14272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-04-16 15:25:19.366  INFO 14272 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-16 15:25:19.366  INFO 14272 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2000 ms
+2018-04-16 15:25:19.575  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-16 15:25:19.580  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-16 15:25:19.581  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-16 15:25:19.581  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-16 15:25:19.581  INFO 14272 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-16 15:25:19.638  WARN 14272 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSocketController': Unsatisfied dependency expressed through field 'websocketService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'websocket.api.IWebSocketService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-04-16 15:25:19.639  INFO 14272 --- [restartedMain] com.reger.dubbo.config.AnnotationBean    : dubbo开始关闭....
+2018-04-16 15:25:19.645  INFO 14272 --- [restartedMain] c.a.d.r.support.AbstractRegistryFactory  :  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2018-04-16 15:25:19.647  INFO 14272 --- [restartedMain] c.a.d.r.support.AbstractRegistryFactory  :  [DUBBO] Close all registries [], dubbo version: 2.5.6, current host: 127.0.0.1
+2018-04-16 15:25:19.650  INFO 14272 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-04-16 15:25:19.669  INFO 14272 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-04-16 15:25:19.865 ERROR 14272 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field websocketService in com.websocket.web.controller.WebSocketController required a bean of type 'websocket.api.IWebSocketService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'websocket.api.IWebSocketService' in your configuration.
+
+2018-04-16 15:25:19.868  INFO 14272 --- [DubboShutdownHook] com.alibaba.dubbo.config.AbstractConfig  :  [DUBBO] Run shutdown hook now., dubbo version: 2.5.6, current host: 127.0.0.1
