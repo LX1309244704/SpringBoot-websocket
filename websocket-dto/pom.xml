@@ -13,7 +13,7 @@
 		<mybatisplus.version>2.1.4</mybatisplus.version>
 		
 		<jackson.version>2.9.6</jackson.version>
-		<httpclient.version>4.5.3</httpclient.version>
+		<httpclient.version>4.5.13</httpclient.version>
 		
 		<logging.version>1.2</logging.version>
 		<log4j.version>1.2.17</log4j.version>
