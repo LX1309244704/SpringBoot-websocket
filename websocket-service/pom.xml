@@ -11,7 +11,7 @@
   <packaging>war</packaging>
   <properties>
 		<zkclient.version>0.10</zkclient.version>
-		<zookeeper.version>3.4.9</zookeeper.version>
+		<zookeeper.version>3.4.14</zookeeper.version>
 		<netty.version>3.10.5.Final</netty.version>
 		<druid.version>1.0.31</druid.version>
 		<spring-boot-starter-dubbo.version>1.0.7</spring-boot-starter-dubbo.version>
