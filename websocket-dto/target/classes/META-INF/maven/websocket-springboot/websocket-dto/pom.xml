@@ -12,7 +12,7 @@
 	<properties>
 		<mybatisplus.version>2.1.4</mybatisplus.version>
 		
-		<jackson.version>2.8.9</jackson.version>
+		<jackson.version>2.12.7.1</jackson.version>
 		<httpclient.version>4.5.3</httpclient.version>
 		
 		<logging.version>1.2</logging.version>
